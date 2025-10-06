@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.titulo { 
+    color: red;
+ font-size: 40px;   
+}
+p {
+    color: black;
+    margin: 30px;
+}
+.primerparrafo {
+    color: blueviolet;
+    font-size: 30px;
+}
+#parrafoquetienequeserazul {
+    color: blue;
+}
+.cuadradito {
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+    margin-top: 200px;
+    margin-right: 200;
+    border: 10px solid black;
+align-items: center;
+}
+.parrafowtf {
+    color: aliceblue;
+    margin-top: 10px;
+text-align: center;
+}

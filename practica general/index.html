@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Sitio Web</title>
+<!-- CSS -->
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div>
+        <p>este es un parrafo dentro de un div</p>
+        <span>este es un span dentro de un div</span>
+    </div>
+
+    <h1 class="titulos">Mi primer sitio web</h1>
+    <p>Este es un parrafo de ejemplo</p>
+
+    
+    <img src="" alt="">
+
+
+    <!-- esta listaa ordenada es el paso a paso de la forma de cocinar -->
+
+   <ol>
+      <li>primer item - batir</li>
+      <li>cocinar</li>
+      <li>comer</li>
+   </ol> 
+
+   <ul>
+    <li>agua</li>
+    <li>carme</li>
+    <li>verduras</li>
+    
+   </ul>
+<nav>
+   <!--Enlace absoluto -->
+   <a href="https://google.com" target="_blank">Prensa</a>
+</nav>
+   <!--enlaces relativos-->
+<a href="servicios.html">ver servicios</a>
+
+<!--enlace interno ! El id se crea con el simbolo # 
+seguido del nombre de la seccion -->
+<a href="#testimonios">Mis testimionios</a>
+
+<section id="testimonios"> 
+    <p>testimonios</p>
+</section>
+
+<!--videos -->
+<video src="video.mp4" controls></video>
+
+<!--audio -->
+<audio src="audio.mp3" controls></audio>
+
+<table> <!-- para organizar emails
+    -->
+    <tr>
+        <th>nombre</th> <!--los encabezados-->
+        <th>apellido</th>
+        <th>ciudad</th>
+    
+    </tr>
+    <tr>
+        <th>juan</th>
+        <th>dominguez</th>
+        <th>eldorado
+        
+        </th>
+    </tr>
+    <!--formularios-->
+
+    <form action="/sumbit" method="post"> <!--etiqueta contenedora-->
+<label for="nombre">nombre:</label>
+<input type="text" name="nombre" id="nombre">
+<label for="password">password</label>
+<input type="password" name="password" id="password">
+
+<label for="mensaje">Mensaje:</label>
+<textarea name="mensaje" id="mensaje"></textarea>
+
+<label for="genero">Genero</label>
+<input type="radio" name="" id="">
+
+
+<label for="hombre">Hombre</label>
+<input type="radio" name="" id="">
+
+
+<label for="mujer">Mujer</label>
+<input type="radio" name="" id="">
+
+<label for="suscribe">suscribirse</label>
+<input type="checkbox" name="suscribe" id="suscribe">
+
+<label for="pais">Pais</label>
+<select name="" id="">
+
+    <option value="">brasil</option>
+    <option value="">argentina</option>
+    <option value="">paraguay</option>
+
+</select>
+
+<input type="submit" value="Enviar">
+    </form>
+
+
+    
+
+</table>
+
+</body>
+</html>

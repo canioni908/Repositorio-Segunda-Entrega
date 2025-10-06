@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.titulocentral {
+    text-align: center;
+    font-size: 40px;
+    background-color: red;
+    color: white;
+}
+.descripciondeinicio {
+    text-align: center;
+    width: 60%;
+    margin-left: 300px;
+}
+ul {
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    list-style: none;
+    padding: 0;
+}
+body {
+    background-color: rgb(80, 78, 78);
+}
+.imagendelogo {
+    height: 120px;
+    background-color: black;
+}
+.fotocamionetainicio {
+    height: 600px;
+    margin-left: 300px;
+}
+.logoinstagram {
+    height: 60px;
+}
+.logofacebook {
+    height: 40px;
+}
+a {
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    list-style: none;
+    padding: 0;
+}
+
+.autosenventa {
+height: 600px;
+    margin-left: 300px;
+}
+.autosenventatitulo {
+    text-align: center;
+    font-size: 40px;
+    background-color: red;
+    color: white;
+}
+.nosotrostitulo {
+    text-align: center;
+    font-size: 40px;
+    background-color: red;
+    color: white;
+    
+}
+.fotoagencia{
+    height: 300px;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+.amarok {
+   height: 300px;
+    margin-left: 100px;
+    
+}
+.parrafoamarok {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.precioamarok {
+  margin-left: 100px;
+    margin-bottom: 100px;  
+}
+.sw4 {
+    height: 300px;
+    margin-left: 100px;
+
+}
+.parrafotoyota {
+   margin-left: 100px;
+    margin-top: 100px; 
+}
+.preciotoyota {
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+.contactos {
+    text-align: center;
+    font-size: 40px;
+    background-color: red;
+    color: white;
+}
+.descripciondecontacto {
+    text-align: center;
+    width: 60%;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+label {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.descripciondegracias {
+    text-align: center;
+    width: 60%;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}

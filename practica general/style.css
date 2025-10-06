@@ -1,0 +1,138 @@
+/* reset de css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*selector, propiedad y valor
+
+selector {
+propiedad: valor 
+
+}
+
+*/
+
+p {
+    /* color: blue; */
+    /* nombre de color , hexadecimal, rgb y rgba */
+    /* color: rgb(red, green, blue); */
+    /* color: red; */
+
+    font-size: 16px;
+    /* Unidades de medidas , px, em , rem %  */
+    
+    
+    margin: 20px;
+
+}
+h1 {
+    color: rgb(0, 255, 98);
+    font-size: 30px;
+    text-align: center;
+}
+
+body {
+    /* color de fondo */
+    background-color: rgb(0, 0, 0);
+}
+
+div {
+    color: rgb(42, 118, 165);
+}
+ 
+span {
+    color: blueviolet;
+}
+
+/* especificidad */
+
+div span {
+    color: aliceblue;
+}
+
+.titulos {
+    color: yellow;
+    text-decoration: underline;
+}
+ #testimonios {
+    text-align: center;
+    color: aqua;
+    text-decoration: underline;
+    font-size: 40px;
+ }
+
+ .titulo-servicios {
+    color: blueviolet;
+    text-transform: uppercase;
+ }
+
+ .parrafo-servicios {
+    color: grey;
+    font-style: italic;
+    font-size: 1.5em;
+ }
+
+ .caja {
+    width: 50%;
+    height: 50vh;
+    background-color: lightblue;
+    border: 2px solid red;
+    text-align: center;
+    line-height: 100px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+ } 
+ .contenedor {
+    background-color: rgb(0, 187, 255);
+    border: rgb(255, 0, 212);
+    display: flex;   /*  activa flex*/
+   flex-grow: 1;  /* flex grou nos permite cambiar el ancho de las cajas de manera flexible */
+    justify-content: space-between; /* hotizontal*/
+    align-items: center;  /* poner verticalmente*/
+    flex-direction: row;
+    flex-direction: column;
+
+padding: 10px;
+}
+
+
+
+
+.navbar {
+    background-color: #b6b9fe;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ .navbar li{
+    margin: 0 15px;
+ }
+
+ .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+ }
+
+ .container {
+    display: flex;
+
+ }
+
+ .sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+ }
+ .maincontent {
+    width: 75%;
+    background-color: #eaeaea;
+    padding: 20px;
+ }
