@@ -1,8 +1,0 @@
-.grid-container {
-    display: grid; /* grid definicion*/
-    grid-template-columns: 1fr 1fr 1fr;/* definir columnas, unidad de medida fraccion */
-     
-    
-    
-    /* definir filas,espacios, */
-}
