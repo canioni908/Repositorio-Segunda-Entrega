@@ -1,0 +1,64 @@
+
+.navbar-brand img {
+  display: block;      
+  max-width: 140px;     
+  height: auto;         
+}
+
+
+
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+  .hero-img {
+    max-width: 90%;  
+    height: auto;    
+  }
+}
+
+
+
+.navbar-nav .nav-link {
+  color: white; 
+  position: relative;
+  transition: color 0.3s, border-bottom 0.3s; /* transición */
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: #ff0000;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff0000;
+  transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+
+.navbar-toggler {
+  border-color: #ff0000;
+}
+
+
+
+
+.navbar {
+  background: linear-gradient(90deg, #1c1c1c, #111); 
+  padding: 0.8rem 2rem;
+}
+
+
+
+
+
+
