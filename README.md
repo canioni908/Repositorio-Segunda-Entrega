@@ -14,5 +14,5 @@ Incluye animaciones, diseño adaptable y uso de variables y mixins en SCSS.
 Abrir el archivo `index.html` desde la carpeta **HTML** o acceder al sitio publicado en GitHub Pages.
 
 ## 🔗 Enlaces
-- Repositorio: [enlace al repo]
-- GitHub Pages: [enlace al sitio]
+- Repositorio: [https://github.com/canioni908/Repositorio-Segunda-Entrega]
+- GitHub Pages: [https://canioni908.github.io/Repositorio-Segunda-Entrega]
