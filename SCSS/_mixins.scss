@@ -1,0 +1,57 @@
+@mixin transition($properties...) {
+  transition: $properties;
+}
+
+@mixin flex-center($direction: row, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) { @content; }
+  } @else if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) { @content; }
+  }
+}
+
+
+@mixin hover-scale($scale: 1.05, $transition: $transition-fast) {
+  transition: transform $transition, background $transition;
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
+// Transición suave para cualquier propiedad
+@mixin smooth-transition($props: all, $duration: $transition-fast, $ease: ease) {
+  transition: $props $duration $ease;
+}
+
+// Fade-in
+@mixin fade-in($duration: 0.6s, $delay: 0s) {
+  opacity: 0;
+  animation: fadeIn $duration ease forwards;
+  animation-delay: $delay;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+// Escalar elemento al aparecer
+@mixin scale-up($duration: 0.3s) {
+  transform: scale(1);
+  animation: scaleUp $duration ease forwards;
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); }
+  to { transform: scale(1); }
+}

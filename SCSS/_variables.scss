@@ -1,0 +1,29 @@
+$primary-color: #ff0000; // rojo destacado
+$navbar-bg-start: #000000;
+$navbar-bg-end: #111;
+$valores-bg: #111;
+$valor-card-bg: #222;
+$valor-card-hover-bg: #c00;
+$autos-bg: #f8f9fa;
+$text-color-light: white;
+$text-color-dark: #111;
+$transition-fast: 0.3s;
+$border-radius: 10px;
+$font-size-base: 16px;
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 992px;
+$breakpoint-desktop: 1200px;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+
+// Mixin para media queries
+@mixin respond-to($device) {
+  @if $device == mobile {
+    @media (max-width: $breakpoint-mobile) { @content; }
+  } @else if $device == tablet {
+    @media (max-width: $breakpoint-tablet) { @content; }
+  }
+}
+

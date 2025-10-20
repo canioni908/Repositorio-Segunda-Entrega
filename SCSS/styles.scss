@@ -1,0 +1,209 @@
+@import 'variables';
+@import 'mixins';
+
+// Navbar
+.navbar {
+  background: linear-gradient(90deg, $navbar-bg-start, $navbar-bg-end); 
+  padding: 0.8rem 2rem;
+
+  &-brand {
+    img {
+      display: block;      
+      max-width: 140px;     
+      height: auto;         
+    }
+  }
+
+  &-nav {
+    .nav-link {
+      color: $text-color-light; 
+      position: relative;
+      @include transition(color $transition-fast, border-bottom $transition-fast);
+      margin: 0 0.5rem;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $primary-color;
+        @include transition(width $transition-fast);
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &-toggler {
+    border-color: $primary-color;
+  }
+}
+
+// Hero image
+.hero-img {
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+  @include respond-to(mobile) {
+    max-width: 90%;
+  }
+}
+
+// Valores section
+.valores-section {
+  text-align: center;
+  background: $valores-bg;
+  color: $text-color-light;
+  padding: 60px 20px;
+
+  .valores-flex {
+    @include flex-center(row, 20px);
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+    .valor-card {
+      background: $valor-card-bg;
+      padding: 20px 40px;
+      border-radius: $border-radius;
+      @include hover-scale(1.05);
+
+      &:hover {
+        background: $valor-card-hover-bg;
+      }
+
+      @include respond-to(mobile) {
+        padding: 15px 20px;
+      }
+    }
+  }
+}
+
+// Autos populares
+.autos-populares {
+  background: $autos-bg;
+  text-align: center;
+  padding: 60px 20px;
+
+  h2 {
+    color: $text-color-dark;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      @include hover-scale(1.03);
+
+      &:hover {
+        box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+      }
+
+      .card-img-top {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+      }
+
+      .card-body {
+        padding: 20px;
+
+        .card-title {
+          font-weight: bold;
+          color: $text-color-dark;
+        }
+
+        .card-text {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+// Ejemplo de media query adicional para navbar en mobile
+@include respond-to(mobile) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    &-nav .nav-link {
+      margin: 0 0.3rem;
+    }
+    &-brand img {
+      max-width: 120px;
+    }
+  }
+}
+// Hero image responsive
+.hero-img {
+  @include respond-to(mobile) {
+    max-width: 90%;
+  }
+
+  @include respond-to(tablet) {
+    max-width: 80%;
+  }
+}
+
+// Valores section responsive
+.valores-flex {
+  @include respond-to(mobile) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.valor-card {
+  @include respond-to(mobile) {
+    padding: 15px 20px;
+  }
+}
+
+// Autos populares / galería responsive
+.galeria-grid {
+  @include respond-to(tablet) {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  @include respond-to(mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Navbar responsive
+@include respond-to(mobile) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+// Animaciones y transiciones
+
+// Valor cards: transición suave + fade-in
+.valores-flex .valor-card {
+  @include smooth-transition(all);
+  @include fade-in(0.6s);
+}
+
+// Galeria cards: transición suave + scale-up
+.galeria-grid .card {
+  @include smooth-transition(all);
+  @include scale-up(0.3s);
+}
+
+// Navbar links: transición color y width
+.navbar-nav .nav-link {
+  @include smooth-transition(color, width);
+}
